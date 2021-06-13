@@ -1,0 +1,157 @@
+[gd_scene load_steps=75 format=2]
+
+[ext_resource path="res://Assets/Animations & Art/Idle/character_idle5.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Animations & Art/Idle/character_idle2.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Animations & Art/Idle/character_idle4.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Animations & Art/Idle/character_idle3.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Animations & Art/Idle/character_idle6.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Animations & Art/Idle/character_idle1.png" type="Texture" id=6]
+[ext_resource path="res://Scenes/Player/Player_black.gd" type="Script" id=7]
+[ext_resource path="res://Assets/Animations & Art/split/character_split15.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Animations & Art/split/character_split13.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Animations & Art/split/character_split12.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Animations & Art/split/character_split14.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Animations & Art/split/character_split1.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Animations & Art/split/character_split2.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Animations & Art/split/character_split3.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Animations & Art/split/character_split4.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Animations & Art/split/character_split8.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Animations & Art/split/character_split9.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Animations & Art/split/character_split7.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Animations & Art/split/character_split11.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Animations & Art/split/character_split6.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Animations & Art/split/character_split5.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_combined_new/jump_combined12.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_combined_new/jump_combined5.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_combined_new/jump_combined1.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_combined_new/jump_combined8.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_combined_new/jump_combined6.png" type="Texture" id=26]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_combined_new/jump_combined7.png" type="Texture" id=27]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_combined_new/jump_combined11.png" type="Texture" id=28]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_combined_new/jump_combined4.png" type="Texture" id=29]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_combined_new/jump_combined2.png" type="Texture" id=30]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_combined_new/jump_combined10.png" type="Texture" id=31]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_combined_new/jump_combined3.png" type="Texture" id=32]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_combined_new/jump_combined9.png" type="Texture" id=33]
+[ext_resource path="res://Assets/Animations & Art/split/character_split10.png" type="Texture" id=34]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_white/jump_white1.png" type="Texture" id=35]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_white/jump_white2.png" type="Texture" id=36]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_white/jump_white9.png" type="Texture" id=37]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_white/jump_white11.png" type="Texture" id=38]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_white/jump_white12.png" type="Texture" id=39]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_white/jump_white4.png" type="Texture" id=40]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_white/jump_white5.png" type="Texture" id=41]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_white/jump_white6.png" type="Texture" id=42]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_white/jump_white10.png" type="Texture" id=43]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_white/jump_white3.png" type="Texture" id=44]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_white/jump_white7.png" type="Texture" id=45]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_black/jump_black10.png" type="Texture" id=46]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_black/jump_black8.png" type="Texture" id=47]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_black/jump_black12.png" type="Texture" id=48]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_black/jump_black7.png" type="Texture" id=49]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_black/jump_black9.png" type="Texture" id=50]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_black/jump_black11.png" type="Texture" id=51]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_black/jump_black2.png" type="Texture" id=52]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_black/jump_black5.png" type="Texture" id=53]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_black/jump_black6.png" type="Texture" id=54]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_black/jump_black1.png" type="Texture" id=55]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_black/jump_black3.png" type="Texture" id=56]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_black/jump_black4.png" type="Texture" id=57]
+[ext_resource path="res://Assets/Animations & Art/Idle/white/idle_white2.png" type="Texture" id=58]
+[ext_resource path="res://Assets/Animations & Art/Idle/white/idle_white4.png" type="Texture" id=59]
+[ext_resource path="res://Assets/Animations & Art/Idle/white/idle_white5.png" type="Texture" id=60]
+[ext_resource path="res://Assets/Animations & Art/Idle/white/idle_white6.png" type="Texture" id=61]
+[ext_resource path="res://Assets/Animations & Art/Idle/white/idle_white1.png" type="Texture" id=62]
+[ext_resource path="res://Assets/Animations & Art/Idle/white/idle_white3.png" type="Texture" id=63]
+[ext_resource path="res://Assets/Animations & Art/Idle/black/idle_black3.png" type="Texture" id=64]
+[ext_resource path="res://Assets/Animations & Art/Idle/black/idle_black4.png" type="Texture" id=65]
+[ext_resource path="res://Assets/Animations & Art/Idle/black/idle_black5.png" type="Texture" id=66]
+[ext_resource path="res://Assets/Animations & Art/Idle/black/idle_black1.png" type="Texture" id=67]
+[ext_resource path="res://Assets/Animations & Art/Idle/black/idle_black2.png" type="Texture" id=68]
+[ext_resource path="res://Assets/Animations & Art/Idle/black/idle_black6.png" type="Texture" id=69]
+[ext_resource path="res://Assets/Animations & Art/walk&jump/jump_white/jump_white8.png" type="Texture" id=70]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 15.838
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 13.299
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 18 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 34 ), ExtResource( 19 ), ExtResource( 10 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "split",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 19 ), ExtResource( 17 ), ExtResource( 16 ), ExtResource( 18 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 15 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "combine",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 67 ), ExtResource( 68 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 69 ) ],
+"loop": true,
+"name": "idle_black",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 24 ), ExtResource( 30 ), ExtResource( 32 ), ExtResource( 29 ), ExtResource( 23 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 25 ), ExtResource( 33 ), ExtResource( 31 ), ExtResource( 28 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "move_combined",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 62 ), ExtResource( 58 ), ExtResource( 63 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ) ],
+"loop": true,
+"name": "idle_white",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 1 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "idle_combined",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 35 ), ExtResource( 36 ), ExtResource( 44 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 45 ), ExtResource( 70 ), ExtResource( 37 ), ExtResource( 43 ), ExtResource( 38 ), ExtResource( 39 ) ],
+"loop": true,
+"name": "move_white",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 55 ), ExtResource( 52 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 49 ), ExtResource( 47 ), ExtResource( 50 ), ExtResource( 46 ), ExtResource( 51 ), ExtResource( 48 ) ],
+"loop": true,
+"name": "move_black",
+"speed": 12.0
+} ]
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 32.9966
+
+[node name="Player_black" type="KinematicBody2D"]
+script = ExtResource( 7 )
+
+[node name="Body" type="Area2D" parent="."]
+collision_layer = 2048
+collision_mask = 2048
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Body"]
+shape = SubResource( 1 )
+
+[node name="Main_collision" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 2 )
+shape = SubResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -0.125 )
+frames = SubResource( 3 )
+animation = "idle_black"
+frame = 5
+playing = true
+offset = Vector2( 0, -8 )
+
+[node name="combine_range" type="Area2D" parent="."]
+collision_layer = 1024
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="combine_range"]
+position = Vector2( -7.62939e-06, -0.946007 )
+shape = SubResource( 4 )
+
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
+[connection signal="body_entered" from="combine_range" to="." method="_on_combine_range_body_entered"]
+[connection signal="body_exited" from="combine_range" to="." method="_on_combine_range_body_exited"]
