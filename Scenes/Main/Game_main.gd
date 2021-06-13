@@ -246,3 +246,4 @@ func _on_Credits_pressed():
 
 func _on_Restart_pressed():
 	get_tree().reload_current_scene()
+	$CanvasLayer/Control2/Game_over_popup.hide()
