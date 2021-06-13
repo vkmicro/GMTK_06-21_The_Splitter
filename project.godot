@@ -21,6 +21,8 @@ Globals="*res://Scenes/Main/Globals.gd"
 [display]
 
 window/size/height=720
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
 
 [input]
 

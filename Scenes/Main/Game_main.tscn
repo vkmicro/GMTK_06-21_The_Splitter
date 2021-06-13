@@ -266,9 +266,9 @@ __meta__ = {
 [node name="Shader_main" type="ColorRect" parent="CanvasLayer/Control2"]
 material = SubResource( 3 )
 margin_left = -1469.04
-margin_top = -542.518
+margin_top = -545.693
 margin_right = 4181.96
-margin_bottom = 2628.48
+margin_bottom = 2625.31
 __meta__ = {
 "_edit_use_anchors_": false
 }
