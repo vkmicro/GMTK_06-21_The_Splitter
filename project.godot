@@ -18,6 +18,10 @@ config/icon="res://icon.png"
 
 Globals="*res://Scenes/Main/Globals.gd"
 
+[display]
+
+window/size/height=720
+
 [input]
 
 left={

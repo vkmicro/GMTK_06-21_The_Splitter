@@ -1,8 +1,26 @@
-[gd_scene format=2]
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes/Credits/Credits.gd" type="Script" id=1]
+[ext_resource path="res://Assets/edge-of-the-galaxy-font/EdgeOfTheGalaxyPoster-3zRAp.otf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_top = 3
+extra_spacing_char = 3
+font_data = ExtResource( 2 )
+
+[sub_resource type="Theme" id=1]
+default_font = SubResource( 2 )
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_top = -0.840912
+margin_bottom = -0.840942
+theme = SubResource( 1 )
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -13,3 +31,46 @@ anchor_bottom = 1.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Label" type="Label" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -56.0
+text = "Credits:
+	Programming and art: <ME> Vasiliy Ulin (vikiridi/vkmicro)
+	
+	https://vkmicro.itch.io/
+	
+	
+	
+	Sound Effects and background Music: kenney.nl
+	
+	
+	Font: Edge of Galaxy - FontSpace
+	 https://www.fontspace.com/edge-of-the-galaxy-font-f45748
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -81.0
+
+[node name="Restart_game" type="Button" parent="Panel/HBoxContainer"]
+margin_right = 510.0
+margin_bottom = 81.0
+size_flags_horizontal = 3
+text = "Restart"
+
+[node name="Close_game" type="Button" parent="Panel/HBoxContainer"]
+margin_left = 514.0
+margin_right = 1024.0
+margin_bottom = 81.0
+size_flags_horizontal = 3
+text = "Close Game"
+
+[connection signal="pressed" from="Panel/HBoxContainer/Restart_game" to="." method="_on_Restart_game_pressed"]
+[connection signal="pressed" from="Panel/HBoxContainer/Close_game" to="." method="_on_Close_game_pressed"]

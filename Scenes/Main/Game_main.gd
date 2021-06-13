@@ -5,6 +5,8 @@ onready var player1 = $Player
 var start_tp_timer = false
 var can_teleport = true
 
+var in_credits = false
+
 func _ready():
 	pass
 #	print($CanvasLayer/bg_music.playing)
@@ -225,12 +227,22 @@ func _on_teleport_timer_timeout():
 	
 	start_tp_timer = false
 	$teleport_timer.stop()
-	$teleport_timer.wait_time = 2
+	$teleport_timer.wait_time = 1
 	$teleport_timer.stop()
 	$teleport_build_up.hide()
 	$teleport_timer_progress.hide()
-		
 
 
 func _on_teleport_cooldown_timeout():
 	can_teleport = true
+
+
+func _on_Exit_pressed():
+	get_tree().quit()
+
+func _on_Credits_pressed():
+	get_tree().change_scene("res://Scenes/Credits/Credits.tscn")
+	
+
+func _on_Restart_pressed():
+	get_tree().reload_current_scene()
